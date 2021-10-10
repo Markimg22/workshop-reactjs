@@ -1,0 +1,19 @@
+.button {
+  border-style: none;
+  border-radius: .5rem;
+
+  padding: 1rem;
+
+  font-size: 1rem;
+
+  color: var(--primary-color);
+  background-color: var(--font-color-light);
+
+  cursor: pointer;
+
+  transition: opacity .2s ease-in-out;
+}
+
+.button:hover {
+  opacity: .8;
+}
