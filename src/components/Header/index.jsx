@@ -1,12 +1,11 @@
 import React from 'react'
 
-import './styles.css'
+import styles from './styles.module.css'
 
-export function Header(props) {
+export function Header() {
   return (
-    <header className="container-header">
-      <h1 className="title">{props.title}</h1>
-      <p className="description">{props.description}</p>
+    <header className={styles.header}>
+      <h1 className={styles.title}>Crie sua lista de tarefas</h1>
     </header>
   )
 }

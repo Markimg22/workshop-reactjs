@@ -1,0 +1,24 @@
+.container {
+  height: 100vh;
+  background-color: #141414;
+}
+
+.form {
+  margin: 2rem auto;
+  
+  max-width: 30%;
+  max-height: 20%;
+
+  height: 130px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 580px) {
+  .form {
+    max-width: 90%;
+  }
+}

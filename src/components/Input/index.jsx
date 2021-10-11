@@ -1,13 +1,13 @@
 import React from 'react'
 
-import './styles.css'
+import styles from './styles.module.css'
 
-export function Input(props) {
+export function Input() {
   return (
     <input 
-      className="input"
-      type={props.type} 
-      placeholder={props.placeholder}
+      className={styles.input}
+      type="text"
+      placeholder="Insira sua tarefa..."
     />
   )
 }
