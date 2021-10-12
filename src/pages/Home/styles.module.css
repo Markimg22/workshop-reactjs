@@ -12,11 +12,6 @@
   justify-content: space-evenly;
 }
 
-.tasksContainer {
-  width: 25%;
-  margin: 0 auto;
-}
-
 @media (max-width: 580px) {
   .form {
     max-width: 90%;

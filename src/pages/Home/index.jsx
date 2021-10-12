@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { v4 as uuid } from 'uuid'
 
 import styles from './styles.module.css'
 
@@ -11,6 +12,18 @@ export function Home() {
   const [title, setTitle] = useState('')
   const [tasks, setTasks] = useState([])
 
+  useEffect(() => {
+    const localTask = localStorage.workshop
+
+    if (!localTask) {
+      localStorage.workshop = JSON.stringify(tasks)
+    } else {
+      setTasks(JSON.parse(localTask))
+    }
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   const handleChange = (event) => {
     setTitle(event.target.value)
   }
@@ -18,17 +31,22 @@ export function Home() {
   const createTask = (event) => {
     event.preventDefault()
 
-    setTasks([...tasks, {
-      id: String(tasks.length),
+    const newTasks = [...tasks, {
+      id: uuid(),
       title,
       isCompleted: false
-    }])
+    }]
 
+    localStorage.workshop = JSON.stringify(newTasks)
+
+    setTasks(newTasks)
     setTitle('')
   }
 
   const deleteTask = (id) => {
     const newTasks = tasks.filter((task) => task.id !== id)
+
+    localStorage.workshop = JSON.stringify(newTasks)
 
     setTasks(newTasks)
   }
@@ -41,6 +59,8 @@ export function Home() {
 
       return tasks
     })
+
+    localStorage.workshop = JSON.stringify(newTasks)
 
     setTasks(newTasks)
   }
