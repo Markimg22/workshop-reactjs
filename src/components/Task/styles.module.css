@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: .3rem;
+  margin-bottom: .5rem;
+
+  border-radius: .5rem;
+
+  background-color: #fff;
+}
+
+.title {
+  color: #141414;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.icons {
+  font-size: 2rem;
+  cursor: pointer;
+}

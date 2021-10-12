@@ -2,12 +2,11 @@ import React from 'react'
 
 import styles from './styles.module.css'
 
-export function Button(props) {
+export function Button() {
   return (
     <button 
       type="submit" 
-      className={styles.button} 
-      onClick={props.onClick}>
+      className={styles.button}>
       Adicionar tarefa
     </button>
   )
