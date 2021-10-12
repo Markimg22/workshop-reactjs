@@ -1,10 +1,10 @@
 .input {
   width: 90%;
 
-  border-radius: .5rem;
+  border-radius: var(--border-radius);
   
   padding: 1rem;
 
   font-size: 1rem;
-  color: #000;
+  color: var(--contrast-color);
 }

@@ -9,13 +9,13 @@
   padding: .3rem;
   margin-bottom: .5rem;
 
-  border-radius: .5rem;
+  border-radius: var(--border-radius);
 
-  background-color: #fff;
+  background-color: var(--primary-color);
 }
 
 .title {
-  color: #141414;
+  color: var(--background-color);
   font-size: 1.2rem;
   font-weight: bold;
 }

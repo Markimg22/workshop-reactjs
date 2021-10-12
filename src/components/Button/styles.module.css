@@ -1,14 +1,14 @@
 .button {
   width: 90%;
 
-  border-radius: .5rem;
+  border-radius: var(--border-radius);
   padding: 1rem;
 
   font-size: 1rem;
   font-weight: bold;
 
-  background-color: #BB86FC;
-  color: #fff;
+  background-color: var(--purple-color);
+  color: var(--primary-color);
 
   cursor: pointer;
   transition: opacity .2s ease-in-out;

@@ -12,7 +12,7 @@ export function Task(props) {
         icon={faTrashAlt} 
         className={styles.icons} 
         onClick={() => props.deleteTask(props.task.id)}
-        color="red"
+        color="#EC2027"
       />
       <p className={styles.title}>{props.task.title}</p>
       <FontAwesomeIcon 
