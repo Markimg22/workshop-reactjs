@@ -1,20 +1,29 @@
 # Workshop ReactJS Hour
 
-### Clonar repositório:
+## Criar projeto:
+```
+npx create-react-app workshop-reactjs-hour
+```
+
+## Clonar repositório:
 ```
 git clone https://github.com/Markimg22/workshop-reactjs.git
-``` 
+```
 
-### Instalar dependências:
+## Mudar branch:
+```
+git checkout config-project
+```
+
+## Instalar dependências:
 ```
 npm install
 ```
-ou
 ```
 npm i
 ```
 
-### Iniciar aplicação:
+## Iniciar aplicação:
 ```
 npm start
 ```
