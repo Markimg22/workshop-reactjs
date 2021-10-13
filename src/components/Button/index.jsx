@@ -2,12 +2,12 @@ import React from 'react'
 
 import styles from './styles.module.css'
 
-export function Button() {
+export function Button(props) {
   return (
     <button 
-      type="submit" 
+      type={props.type}
       className={styles.button}>
-      Adicionar tarefa
+      {props.title}
     </button>
   )
 }

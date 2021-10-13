@@ -67,10 +67,10 @@ export function Home() {
 
   return (
     <div>
-      <Header />
+      <Header title="Crie sua lista de tarefas." />
       <form className={styles.form} onSubmit={createTask}>
-        <Input value={title} onChange={handleChange} />
-        <Button />
+        <Input type="text" maxLength={20} placeholder="Insira sua tarefa..." value={title} onChange={handleChange} />
+        <Button type="submit" title="Adicionar tarefa" />
       </form>
       <div className={styles.tasksContainer}>
         {tasks.map((task, index) => (
